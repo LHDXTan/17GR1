@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> 广告图片轮播切换</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js.js" type="text/javascript">
+    	
+    </script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".adver").mouseover(function(){
+    			$(".arrowLeft").show().next().show();
+    		}).mouseout(function(){
+    			$(".arrowLeft").hide().next().hide();
+    		});
+    	
+    		var ss= ["adver01.jpg","adver02.jpg","adver03.jpg","adver04.jpg","adver05.jpg","adver06.jpg"];
+    		var x=0;
+    		$(".arrowRight").click(function(){
+    			if(x==ss.length-1){
+    				alert("最后一张了");
+    			}else{
+    				x++;
+    				var i=x+1;
+    				$(".adver").css("background","url(images/"+ss[x]+")");
+    				$("li:nth-child(+"+i+")").css("background","orange");
+    				$("li:nth-child(+"+i+")").siblings().css("background","#333333");
+    			}
+    		}).prev().click(function(){
+    			if(x==0){
+    				alert("这是第一张");
+    			}else{
+    				x--;
+    				var i=x+1;
+    				$(".adver").css("background","url(images/"+ss[x]+")");
+    				$("li:nth-child(+"+i+")").css("background","orange");
+    				$("li:nth-child(+"+i+")").siblings().css("background","#333333");
+    			}
+    		})
+    		
+    		
+    		
+    		
+    		
+    	
+    	})
+    </script>
+</head>
+<body>
+<div class="adver">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <div class="arrowLeft"><</div><div class="arrowRight">></div>
+</div>
+</body>
+</html>

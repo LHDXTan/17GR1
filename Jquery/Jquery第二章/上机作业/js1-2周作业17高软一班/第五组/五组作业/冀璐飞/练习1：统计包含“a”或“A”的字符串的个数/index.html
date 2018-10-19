@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var count=0;
+			var Strings=new Array();
+			Strings[0]="admin";
+			Strings[1]="Array";
+			Strings[2]="java";
+			Strings[3]="script";
+			for(i=0;i<Strings.length;i++){
+				var zi=Strings[i];
+				  for(j=0;j<zi.length;j++){
+				  	 if(zi.charAt(j)==="a"){
+				  	 	count++;
+				  	 	break;
+				  	 }else if(zi.charAt(j)==="A"){
+				  	 	count++;
+				  	 	break;
+				  	 }
+				  }
+			}
+			alert(count);
+		</script>
+	</body>
+</html>
+
+
+
