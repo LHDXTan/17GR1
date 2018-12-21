@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/Member_Packet.jsp,WebRoot/Member_Commission.jsp,/,WebRoot/statics/js,WebRoot/Member_Member.jsp,WebRoot/publicFiles/pre/header.jsp,WebRoot/Member_Money_Charge.jsp,WebRoot/Member_Collect.jsp,WebRoot/settlement3.jsp,WebRoot/publicFiles/backend/searchBar.jsp,WebRoot/Member_Cash.jsp,WebRoot/Member_Money_Pay.jsp,WebRoot/Member.jsp,WebRoot/Member_Member_List.jsp,WebRoot/Member_Safe.jsp,WebRoot/Member_Links.jsp,WebRoot/favoriteList.jsp,WebRoot/Member_Money.jsp,WebRoot/Member_Msg.jsp,WebRoot/publicFiles/pre/searchBar.jsp,WebRoot/Member_User.jsp,WebRoot/Member_Order.jsp,WebRoot/Member_Address.jsp,WebRoot/Member_Results.jsp
+validator.Revalidate=true
+validator.Unchecked=WebRoot
