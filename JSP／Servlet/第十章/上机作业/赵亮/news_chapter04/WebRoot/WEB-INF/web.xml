@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>do_login</servlet-name>
+    <servlet-class>org.news.servlet.do_login</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <servlet-name>newaction</servlet-name>
+    <servlet-class>org.news.servlet.newaction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>topicCao</servlet-name>
+    <servlet-class>org.news.servlet.topicCao</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>zhuCao</servlet-name>
+    <servlet-class>org.news.servlet.zhuCao</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>do_login</servlet-name>
+    <url-pattern>/do_login</url-pattern>
+  </servlet-mapping>
+ 
+  <!-- 
+ 		新闻的增删改查 
+   -->
+  <servlet-mapping>
+    <servlet-name>newaction</servlet-name>
+    <url-pattern>/newaction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>topicCao</servlet-name>
+    <url-pattern>/topicCao</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>zhuCao</servlet-name>
+    <url-pattern>/zhuCao</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
