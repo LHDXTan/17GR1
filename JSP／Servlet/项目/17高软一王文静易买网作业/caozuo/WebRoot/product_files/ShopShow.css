@@ -1,0 +1,60 @@
+html {
+	margin: 0px; padding: 0px;
+}
+body {
+	margin: 0px; padding: 0px;
+}
+ul {
+	margin: 0px; padding: 0px;
+}
+li {
+	margin: 0px; padding: 0px;
+}
+p {
+	margin: 0px; padding: 0px;
+}
+li {
+	list-style: none;
+}
+#tsShopContainer li {
+	vertical-align: top;
+}
+#tsShopContainer img {
+	vertical-align: top;
+}
+#tsShopContainer {
+	width: 392px; height: 495px; float: left; position: relative;
+}
+#tsShopContainer #tsImgS {
+	border: 1px solid rgb(234, 234, 234); border-image: none; width: 100%; text-align: center; position: relative;
+}
+#tsShopContainer #tsImgS a {
+	margin: 0px auto; text-align: center; display: block;
+}
+#tsShopContainer #tsImgS img {
+	border: 0px currentColor; border-image: none; width: 390px; height: 390px;
+}
+#tsShopContainer #tsPicContainer {
+	background: url("../images/scrollPicbg.gif") repeat-x 0px 0px; width: 100%; height: 90px; margin-top: 10px; position: relative;
+}
+#tsShopContainer #tsPicContainer #tsImgSArrL {
+	background: url("../images/r_left.png") no-repeat left; left: 0px; top: 0px; width: 15px; height: 100%; position: absolute; cursor: pointer;
+}
+#tsShopContainer #tsPicContainer #tsImgSArrR {
+	background: url("../images/r_right.png") no-repeat right; top: 0px; width: 15px; height: 100%; right: 0px; position: absolute; cursor: pointer;
+}
+#tsShopContainer #tsPicContainer #tsImgSCon {
+	left: 18px; top: 0px; width: 1px; height: 90px; overflow: hidden; position: absolute;
+}
+#tsShopContainer #tsPicContainer #tsImgSCon ul {
+	width: 100%; overflow: hidden;
+}
+#tsShopContainer #tsPicContainer #tsImgSCon li {
+	width: 90px; float: left; cursor: pointer;
+}
+#tsShopContainer #tsPicContainer #tsImgSCon li img {
+	margin: 1px; padding: 2px; border: 1px solid rgb(234, 234, 234); border-image: none; width: 79px; height: 79px; display: block;
+}
+#tsShopContainer #tsPicContainer #tsImgSCon li.tsSelectImg img {
+	margin: 0px; padding: 1px; border: 3px solid rgb(255, 78, 0); border-image: none;
+}

@@ -1,0 +1,21 @@
+.MagicZoomBigImageCont {
+	background: rgb(255, 255, 255); border: 1px solid rgb(145, 184, 23); border-image: none;
+}
+.MagicZoomMain {
+	width: 92px; text-align: center !important;
+}
+.MagicZoomMain div {
+	padding: 0px !important;
+}
+.MagicZoomHeader {
+	background: rgb(145, 184, 23); font: 10px/normal Tahoma, Verdana, Arial, sans-serif; text-align: center !important; color: rgb(255, 255, 255); font-size-adjust: none; font-stretch: normal;
+}
+.MagicZoomPup {
+	background: rgb(255, 255, 255); border: 0px solid rgb(170, 170, 170); border-image: none;
+}
+.MagicZoomLoading {
+	background: rgb(255, 255, 255); padding: 3px !important; border: 1px solid rgb(204, 204, 204); border-image: none; text-align: center; color: rgb(68, 68, 68); display: none; opacity: 0.8;
+}
+.MagicZoomLoading img {
+	padding-top: 3px !important;
+}
