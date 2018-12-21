@@ -1,0 +1,23 @@
+package cn.easybuy.dao;
+import java.util.List;
+import cn.easybuy.entity.Order;
+
+/***
+ * 订单处理的dao层
+ * getRowCount
+ * getRowList(Params params)
+ * getById(Integer id)
+ * addObject(Params params)
+ */
+public interface OrderDao {
+
+	public void add(Order order) ;
+
+	public void deleteById(Integer id);
+	
+	public Order getOrderById(Integer id) ;
+	
+	public List<Order> getOrderList(Integer userId,Integer currentPageNo,Integer pageSize) ;
+	
+	public Integer count(Integer userId);
+}
