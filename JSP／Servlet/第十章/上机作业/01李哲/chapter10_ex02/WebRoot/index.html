@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>ajax</title>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=UTF-8">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="0">
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#email").blur(function() {
+    	var inputValue = this.value;
+    	if (inputValue == "") {
+    	    $("#demo").html("<font color='red'>请输入邮箱</font>");
+    	} else {
+    	    $.ajax({
+    	    	"url"      :"checkemail",
+    	    	"type"     :"get",
+    	    	"data"     :"email="+inputValue,
+    	    	"dataType" :"text",
+    	    	"success"  :processResponse
+    	    });
+    	}
+    });
+});
+
+function processResponse(info) {
+    if (info == "fail") {
+    	$("#demo").html("<font color='red'>邮箱已被注册</font>");
+        $("#email").val("");
+    } else {
+    	$("#demo").html("<font color='green'>邮箱可以使用</font>");
+    }
+}
+</script>
+</head>
+<body>
+<div id="demo" style="height:30px;"></div>
+<form action="" method="POST" name="f1">
+        <table>
+            <tr>
+                <td>注册邮箱：<input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>注册密码：<input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><center><input type="button" value="提交"></center></td>
+            </tr>
+        </table>
+</form>
+</body>
+</html>
